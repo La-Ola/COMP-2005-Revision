@@ -1,0 +1,149 @@
+:root{
+    --shadow: 0px 7px 15px -5px #434735;
+    --lightest: rgb(255, 255, 255);
+    --light: rgb(249, 247, 247);
+    --thistle-lightest: #c9ecbf;
+    --thistle-lighter: #AEE49F;
+    --thistle-light: #87BB79;
+    --thistle-medium: #619354;
+    --thistle-dark: #3C6E31;
+    --thistle-darkest: #164A10;
+    --gradient: linear-gradient(120deg, var(--thistle-medium) 10%, var(--thistle-light) 20%, var(--thistle-lighter) 30%, var(--thistle-medium) 45%, var(--thistle-dark) 80%, var(--thistle-darkest) 100%);
+    --font-family: "Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
+}
+
+html, input, textarea {
+    font-family: var(--font-family);
+}
+
+/*body*/
+body {
+    background: var(--light);
+    margin:0;
+    font-size: 18px;
+}
+
+.wrapper {
+    margin-right: 225px;
+    font-size: 0;
+}
+
+.title-card {
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+    color: var(--lightest);
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto 0 auto;
+    width: calc(100% - 40px - 20px);
+    border-radius: 10px;
+    display: block;
+}
+
+.wide-card {
+    background: var(--lighest);
+    box-shadow: var(--shadow);
+    color: var(--thistle-darkest);
+    padding: 10px 10px 10px 10px;
+    margin: 20px auto 0 auto;
+    width: calc(100% - 40px - 20px);
+    border-radius: 10px;
+    display: block;
+    font-size: var(--font-smaller);
+}
+
+.wide-card:last-of-type {
+    margin-bottom: 20px;
+}
+
+/*all navbar design*/
+.navbar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: var(--gradient);
+}
+
+.navbar button {
+    background: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    text-align: left;
+    height: 70px;
+    width: 225px;
+    cursor: pointer;
+    color: var(--lightest);
+    font-size: 22px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar button:hover {
+    background: var(--thistle-darkest);
+    transition: 0.25s;
+}
+
+.navbar button.active {
+    background: var(--thistle-darkest);
+}
+
+/*icons*/
+.navbar svg {
+    fill: var(--lightest);
+    padding: 15px 15px 15px 10px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px var(--thistle-dark);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--thistle-medium);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--thistle-dark);
+}
+
+
+/*stop text selection*/
+.noselect  {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    cursor: default;
+}
+
+/*misc*/
+.seperator {
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+    padding: 2px 2px 2px 2px;
+    margin: 20px auto 0 auto;
+    width: calc(100% - 40px - 20px);
+    border-radius: 10px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
