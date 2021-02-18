@@ -2,13 +2,15 @@
     --shadow: 0px 7px 15px -5px #434735;
     --lightest: rgb(255, 255, 255);
     --light: rgb(249, 247, 247);
-    --thistle-lightest: #c9ecbf;
-    --thistle-lighter: #AEE49F;
-    --thistle-light: #87BB79;
-    --thistle-medium: #619354;
-    --thistle-dark: #3C6E31;
-    --thistle-darkest: #164A10;
-    --gradient: linear-gradient(120deg, var(--thistle-medium) 10%, var(--thistle-light) 20%, var(--thistle-lighter) 30%, var(--thistle-medium) 45%, var(--thistle-dark) 80%, var(--thistle-darkest) 100%);
+    --ocean-lightest: #bef1fc;
+    --ocean-lighter: #a4edfc;
+    --ocean-light: #00d4ff;
+    --ocean-medium: #2f2fa1;
+    --ocean-dark: #090979;
+    --ocean-darkest: #020024;
+    --gradient: linear-gradient(120deg, var(--ocean-medium) 10%, var(--ocean-light) 20%, var(--ocean-lighter) 30%, var(--ocean-medium) 45%, var(--ocean-dark) 80%, var(--ocean-darkest) 100%);
+    --box-gradient: linear-gradient(120deg, var(--ocean-medium) 45%, var(--ocean-dark) 80%, var(--ocean-darkest) 100%);
+    
     --font-family: "Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
 }
 
@@ -43,13 +45,13 @@ body {
 .wide-card {
     background: var(--lighest);
     box-shadow: var(--shadow);
-    color: var(--thistle-darkest);
+    color: var(--ocean-darkest);
     padding: 10px 10px 10px 10px;
     margin: 20px auto 0 auto;
     width: calc(100% - 40px - 20px);
     border-radius: 10px;
     display: block;
-    font-size: var(--font-smaller);
+    font-size: 18px;
 }
 
 .wide-card:last-of-type {
@@ -85,12 +87,12 @@ body {
 }
 
 .navbar button:hover {
-    background: var(--thistle-darkest);
+    background: var(--ocean-darkest);
     transition: 0.25s;
 }
 
 .navbar button.active {
-    background: var(--thistle-darkest);
+    background: var(--ocean-darkest);
 }
 
 /*icons*/
@@ -108,17 +110,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 4px var(--thistle-dark);
+    box-shadow: inset 0 0 4px var(--ocean-dark);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--thistle-medium);
+    background: var(--ocean-medium);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--thistle-dark);
+    background: var(--ocean-dark);
 }
 
 

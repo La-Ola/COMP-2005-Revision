@@ -1,0 +1,29 @@
+.module-card {
+    background: var(--box-gradient);
+    box-shadow: var(--shadow);
+    color: var(--ocean-lightest);
+    margin: 20px auto 0px 20px;
+    width: calc((100% - 40px - 20px - 80px - 60px)/4);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+}
+
+.module-card a {
+    text-decoration: none;
+}
+
+.module-card button {
+    border-radius: 10px;
+}
+
+.module-card svg {
+    fill: var(--ocean-lightest);
+    padding: 15px 15px 15px 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    
+}
